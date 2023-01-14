@@ -1,11 +1,8 @@
 package com.rubelz.findcardbin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import androidx.activity.viewModels
-import androidx.core.widget.addTextChangedListener
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
 import com.rubelz.findcardbin.data.models.Card
 import com.rubelz.findcardbin.databinding.ActivityMainBinding
@@ -30,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 
     private fun addObservers() {
         vm.card.observe(this@MainActivity) { card ->
